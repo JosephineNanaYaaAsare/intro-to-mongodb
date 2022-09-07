@@ -134,7 +134,20 @@ Operators add conditions that compares two or more values
    {“favouriteFruit”: {“$in”: [“apple”, “orange”]}}
 ```
 
+This comparison operators require an ARRAY
+
+```
+  Syntax
+{<fieldName1>: { <operator1>:  [ <value1>,  <value2>] }, …}
+
+Examples
+{“eyeColor”: {“$in”: [“blue”, “brown”]}}
+{“favouriteFruit”: {“$nin”: [“apple”, “orange”]}}
+
+```
+
 ## "and" Operator
+
 Logically combines multiple conditions. Resulting documents must much ALL conditions
 
 ```
